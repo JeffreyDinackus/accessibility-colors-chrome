@@ -1,0 +1,14 @@
+{
+  "name": "Accessibility Colors",
+  "version": "0.0.1",
+  "description": "Use our color schemes to help you see the web!",
+  "manifest_version": 3,
+  "author": "Team Zero Hacknc",
+  "action": {
+    "default_popup": "extension.html",
+    "default_title": "Accessibility Colors"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
