@@ -1,4 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-  // Your code to be executed on page load here.
-  document.body.style.backgroundColor = 'red'; // Change to the color you want.
-});
+//Listen for messages from the popup
+chrome.runtime.onMessage.addListener(
+  function (request, sender, sendResponse) {
+    //Check if the message is to change the background color
+    if (request.color) {
+      // Change the background color of the page
+      document.body.style.backgroundColor = request.color;
+    }
+  });

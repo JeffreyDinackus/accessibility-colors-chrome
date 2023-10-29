@@ -1,17 +1,11 @@
 {
+  "manifest_version": 2,
   "name": "Accessibility Colors",
   "version": "0.0.1",
   "description": "Use our color schemes to help you see the web!",
   "permissions": [
-    "activeTab",
-    "scripting"
+    "activeTab"
   ],
-  "manifest_version": 3,
-  "author": "Team Zero",
-  "action": {
-    "default_popup": "extension.html",
-    "default_title": "Accessibility Colors"
-  },
   "icons": {
     "128": "icon.png"
   },
@@ -21,8 +15,13 @@
         "<all_urls>"
       ],
       "js": [
-        "content.js"
+        "content.js",
+        "popup.js"
       ]
     }
-  ]
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
 }
