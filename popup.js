@@ -13,7 +13,10 @@ colorSelect.addEventListener("submit", function () {
   console.log("test")
 
 
-  document.body.style.backgroundColor = 'red';
+
+
+
+
   // Send a message to the content script to change the background color
   // chrome.tabs.query({}, function (tabs) {
   //   tabs.forEach(function (tab) {
