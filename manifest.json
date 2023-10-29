@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Accessibility Colors",
   "version": "0.0.1",
-  "description": "Use our color schemes to help you see the web!",
+  "description": "Color schemes for the colorblind",
   "permissions": [
     "activeTab"
   ],
@@ -15,9 +15,9 @@
         "<all_urls>"
       ],
       "js": [
-        "content.js",
-        "popup.js"
-      ]
+        "content.js"
+      ],
+      "run_at": "document_end"
     }
   ],
   "browser_action": {

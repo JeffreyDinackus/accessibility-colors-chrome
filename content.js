@@ -1,9 +1,10 @@
-//Listen for messages from the popup
-chrome.runtime.onMessage.addListener(
-  function (request, sender, sendResponse) {
-    //Check if the message is to change the background color
-    if (request.color) {
-      // Change the background color of the page
-      document.body.style.backgroundColor = request.color;
-    }
-  });
+// content.js
+
+console.log("xd")
+
+// Load the selected color from storage
+// chrome.storage.sync.get(['selectedColor'], function (result) {
+//   const selectedColor = result.selectedColor || 'red'; // Default color is red
+//   document.body.style.backgroundColor = selectedColor;
+// });
+document.body.style.background = 'red';
